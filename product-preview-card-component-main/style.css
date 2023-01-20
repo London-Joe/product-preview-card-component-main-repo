@@ -17,28 +17,93 @@
 body {
  font-family: 'Fraunces', serif;
  margin: 0;
- padding: 0;
+ padding: 30px 20px;
  box-sizing: border-box;
+ background-color: var(--cream);
 }
 
+/* styling the contents */
+
+.container {
+ margin: 0 auto;
+ max-width: 375px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+img {
+ width: 100%;
+ border-radius: 10px 10px 0 0;
+}
+
+.content {
+ background-color: var(--white);
+ padding: 0 25px 25px;
+ border-radius: 0 0 10px 10px;
+}
+
+#scent {
+ letter-spacing: 5px;
+}
+
+#main {
+ color: var(--veryDarkBlue);
+}
+
+p {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 14px;
+ color: var(--darkGrayishBlue);
+ line-height: 1.6em;
+}
+
+#numbers {
+display: flex;
+}
+
+#price {
+ color: var(--darkCyan);
+}
+
+#strike {
+font-size: 14px;
+align-self: center;
+padding-left: 15px;
+text-decoration: line-through;
+}
+
+button {
+ padding: 1.2em;
+ background-color: var(--darkCyan);
+ border: none;
+ border-radius: 0.5em;
+ width: 100%;
+ color: var(--white);
+ cursor: pointer;
+}
+
+.fa-solid {
+ padding-right: 0.5em;
+}
 
 .attribution {
  font-size: 11px;
  text-align: center;
+ margin-top: 10px;
 }
 
 .attribution a {
  color: hsl(228, 45%, 44%);
 }
-img {
- width: 100%;
-}
+
 .big {
 display: none;
 }
 
 @media screen and (min-width:600px) {
  .big {
-  display: block;
+  
  }
 }
