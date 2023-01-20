@@ -6,3 +6,15 @@
 .attribution a {
  color: hsl(228, 45%, 44%);
 }
+img {
+ width: 100%;
+}
+.big {
+display: none;
+}
+
+@media screen and (min-width:600px) {
+ .big {
+  display: block;
+ }
+}
