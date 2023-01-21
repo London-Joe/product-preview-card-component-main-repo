@@ -16,7 +16,7 @@
 
 body {
  font-family: 'Fraunces', serif;
- margin: 0;
+ margin: 0 auto;
  padding: 30px 20px;
  box-sizing: border-box;
  background-color: var(--cream);
@@ -24,18 +24,24 @@ body {
 
 /* styling the contents */
 
+.flex {
+display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
 .container {
  margin: 0 auto;
  max-width: 375px;
  display: flex;
  flex-direction: column;
- align-items: center;
- justify-content: center;
+ box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.07);
 }
 
-img {
- width: 100%;
+.small {
  border-radius: 10px 10px 0 0;
+  width: 100%;
 }
 
 .content {
@@ -82,8 +88,20 @@ button {
  width: 100%;
  color: var(--white);
  cursor: pointer;
+ opacity: 0.8;
+ box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
+button:hover {
+ opacity: 1;
+ transition: 0.5s;
+}
+
+button h4 {
+ padding: 0;
+ margin: 0;
+ display: inline;
+}
 .fa-solid {
  padding-right: 0.5em;
 }
@@ -102,8 +120,24 @@ button {
 display: none;
 }
 
+/* desktop view */
+
 @media screen and (min-width:600px) {
+ .container {
+  flex-direction: row;
+  max-width: 600px;
+ }
+ .content {
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+  padding: 25px ;
+ }
  .big {
-  
+  display: block;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+ }
+ .small {
+  display: none;
  }
 }
