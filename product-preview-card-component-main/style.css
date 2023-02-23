@@ -6,6 +6,7 @@
 :root {
  /* primary */
  --darkCyan: hsl(158, 36%, 37%);
+ --darkerCyan: hsl(158, 36%, 18%);
  --cream: hsl(30, 38%, 92%);
 
  /* neutral */
@@ -88,12 +89,11 @@ button {
  width: 100%;
  color: var(--white);
  cursor: pointer;
- opacity: 0.8;
  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
- opacity: 1;
+ background-color: var(--darkerCyan);
  transition: 0.5s;
 }
 
